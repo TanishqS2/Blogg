@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+    <h1 class="pageHeading">POST HERE!</h1>
+
+
+    <form action="/submit" method="post" class="postsec">
+        <input type="email" name="Email" class="email" placeholder="Email">
+        <input type="text" name="post" id="writePost" placeholder="Write Post here....">
+        <button type="submit" class="post-btn">POST</button>
+    </form>
+<%- include("partials/footer.ejs") %>   

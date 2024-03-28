@@ -1,0 +1,291 @@
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #29435C;
+}
+
+.header{
+    background-color: #152A38;
+    color: #D1D4C9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 102.5rem;
+}
+
+.header .title h1{
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+} 
+
+.header .title h1:hover{
+    transform: translateY(-2px);
+    color: antiquewhite;
+}
+
+.header .search input{
+    border: none;
+    height: 1.5rem;
+    width: 35rem;
+    font-family: "Oswald",sans-serif;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: medium;
+}
+.header .search{
+    display: flex;
+    align-items: center;
+}
+
+.header .search i{
+    margin: 3px;
+    cursor: pointer;
+}
+
+.header .nav .posting{
+    color: #D1D4C9;
+    margin: 15px;
+    padding: 5px;
+}
+
+.header .nav{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    word-spacing: 3px;
+}
+
+.header .nav .posting:hover{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.header .postBlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: #152A38;
+    max-width: 161px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown{
+    margin: 10px;
+}
+
+.dropdown .dropbtn{
+    background-color: #152A38;
+    border: none;
+    color: #D1D4C9;
+    margin: 10px;
+}
+
+.footer{
+    color: #d1d4c99f;
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    word-spacing: 5px;
+    background-color: #152A38;
+    height: 200px;
+    width: 102.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    height: 90vh;
+}
+
+.first .mainTitle{
+    font-family: "Oswald", sans-serif;
+    color: #D1D4C9;
+    margin: 50px;
+    margin-bottom: 0;
+    padding: 50px;
+    font-size: 5vw;
+    word-spacing: 5px;
+}
+
+.first .mainImg{
+    height: 400px;
+    width: 400px;
+    filter: invert(100%);
+}
+
+.first .mainTitle p{
+    margin: 0;
+    font-size: 8vw;
+    line-height: 150px;
+}
+
+.first .mainTitle p:hover{
+    color: antiquewhite;
+}
+
+.email{
+    height: 5rem;
+    width: 70vw;
+    margin: 10px;
+    border: 3px solid aliceblue;
+    color: aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.2vw;
+    font-family: "Oswald", sans-serif;
+    background-color: #29435C;
+    outline: none;
+}
+
+.email::placeholder, #writePost::placeholder{
+    color: aliceblue;
+}
+
+#writePost{
+    height: 15rem;
+    width: 70vw;
+    margin: 10px;
+    border: 3px solid aliceblue;
+    color: aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.2vw;
+    font-family: "Oswald", sans-serif; 
+    background-color: #29435C;  
+    outline: none; 
+}
+
+.post-btn{
+    height: 3rem;
+    width: 8rem;
+    border: none;
+    border-radius: 10px;
+    font-family: "Oswald", sans-serif; 
+    font-size: 1.2vw;
+    color: #152A38;
+    cursor: pointer;
+    background-color: aliceblue;
+    margin: 30px;
+}
+
+.post-btn:hover{
+    background-color: #d1d4c9d7;
+    transform: translateY(-3px);
+}
+
+.postsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+    margin-top: 10px;
+}
+
+.pageHeading{
+    font-family: "Oswald", sans-serif;
+    font-size: 4vw;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.second .line{
+    display: flex;
+    justify-content: center;
+}
+
+.second .line hr{
+    width: 20rem;
+    border: 1px dashed #15273278;
+}
+
+.second .yourPosts{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: #D1D4C9;
+    margin: 20px;
+}
+
+.second .secondContent .card1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    width: 25rem;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #f9f9f958;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.second .card1 .emailName{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+    color: #D1D4C9;
+}
+
+.second .card1 .cardContent{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+    color: #D1D4C9;
+    padding: 20px;
+}
+
+.second .secondContent .card1:hover{
+    background-color: #152a3899;
+    cursor: pointer;
+}
+
+.second .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
